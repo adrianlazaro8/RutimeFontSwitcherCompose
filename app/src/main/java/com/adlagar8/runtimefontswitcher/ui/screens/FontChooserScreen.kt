@@ -1,9 +1,6 @@
 package com.adlagar8.runtimefontswitcher.ui.screens
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
@@ -32,30 +29,32 @@ fun FontChooserScreen() {
 
         var fontFamily by remember { mutableStateOf(fontFamily) }
 
-        FontFinder {
-            val fontName = GoogleFont(it)
-            fontFamily = FontFamily(
-                Font(googleFont = fontName, fontProvider = provider)
-            )
-        }
-        Card(
-            backgroundColor = Color.Gray,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(
-                    horizontal = 8.dp,
+        Column {
+            FontFinder {
+                val fontName = GoogleFont(it)
+                fontFamily = FontFamily(
+                    Font(googleFont = fontName, fontProvider = provider)
                 )
-        ) {
-            Text(
-                fontFamily = fontFamily,
-                text = stringResource(R.string.write_something),
-                color = Color.White,
-                fontSize = 22.sp,
-                textAlign = TextAlign.Center,
+            }
+            Card(
+                backgroundColor = Color.Gray,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 16.dp)
-            )
+                    .padding(
+                        horizontal = 8.dp,
+                    )
+            ) {
+                Text(
+                    fontFamily = fontFamily,
+                    text = stringResource(R.string.write_something),
+                    color = Color.White,
+                    fontSize = 22.sp,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 16.dp)
+                )
+            }
         }
     }
 }
