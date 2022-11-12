@@ -42,7 +42,7 @@ fun FontChooserScreen() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(
-                        horizontal = 8.dp,
+                        horizontal = 16.dp,
                     )
             ) {
                 Text(
