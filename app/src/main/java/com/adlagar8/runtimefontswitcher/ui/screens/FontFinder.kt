@@ -6,7 +6,9 @@ import androidx.compose.material.Text
 import androidx.compose.material.TextField
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.adlagar8.runtimefontswitcher.R
 
 @Composable
 fun FontFinder(onTextChanged: (String) -> Unit) {
@@ -18,7 +20,7 @@ fun FontFinder(onTextChanged: (String) -> Unit) {
             .fillMaxWidth()
             .padding(16.dp),
         value = currentText,
-        placeholder = { Text("Escribe el nombre de una fuente") },
+        placeholder = { Text(stringResource(R.string.write_typography_name)) },
         onValueChange = {
             currentText = it
             if (currentText.isNotEmpty()) {
