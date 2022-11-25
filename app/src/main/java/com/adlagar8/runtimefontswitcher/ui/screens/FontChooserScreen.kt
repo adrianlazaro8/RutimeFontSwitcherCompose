@@ -41,6 +41,7 @@ fun FontChooserScreen() {
                 backgroundColor = Color.Gray,
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(50.dp)
                     .padding(
                         horizontal = 16.dp,
                     )
@@ -53,7 +54,7 @@ fun FontChooserScreen() {
                     textAlign = TextAlign.Center,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 16.dp)
+                        .padding(vertical = 8.dp)
                 )
             }
         }
