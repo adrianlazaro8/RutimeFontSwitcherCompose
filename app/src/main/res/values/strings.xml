@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="write_something">Escribe lo que quieras</string>
+    <string name="app_name">Runtime Font Switcher</string>
+    <string name="write_something">Texto de ejemplo</string>
     <string name="write_typography_name">Escribe el nombre de una fuente</string>
 </resources>
