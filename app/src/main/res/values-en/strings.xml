@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Runtime Font Switcher</string>
+    <string name="write_something">Sample text</string>
+    <string name="write_typography_name">Write the font name</string>
+</resources>
