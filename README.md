@@ -10,5 +10,5 @@ It could be a very interesting point if you or any customer want to create a cus
 
 You can choose any font from Google Fonts (https://fonts.google.com/) and use it in the whole app programatically.
 
-![image](https://user-images.githubusercontent.com/9025803/210403525-b5f7687f-e351-418a-b8d8-52a8ee4b8d2e.png)
+![image](https://github.com/adrianlazaro8/RutimeFontSwitcherCompose/blob/develop/art/usage.gif)
 
